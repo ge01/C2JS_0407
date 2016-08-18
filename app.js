@@ -8,23 +8,21 @@ var MIN_B_SCORE = 80;
 var MIN_C_SCORE = 70;
 var MIN_D_SCORE = 60;
 
-var grade;          // Holds a letter grade
-
 // Get the numberic scores
 var testScore = prompt("Enter you numberic test score and I will tell you the letter grade you earned: ", "");
 console.log("You entered: " + testScore);
 
 // Determin the letter grade
 if (testScore >= MIN_A_SCORE)
-  grade = 'A';
+  var grade = 'A';
 else if  (testScore >= MIN_B_SCORE)
-  grade = 'B';
+  var grade = 'B';
 else if  (testScore >= MIN_C_SCORE)
-  grade = 'C';
+  var grade = 'C';
 else if  (testScore >= MIN_D_SCORE)
-  grade = 'D';
+  var grade = 'D';
 else if  (testScore >= 0)
-  grade = 'F';
+  var grade = 'F';
 
 // Display the letter grade
 document.getElementById("letter-grade").innerHTML = grade;
